@@ -4,15 +4,15 @@ from discord.ext import commands, tasks
 import asyncio, json, os, requests
 from datetime import datetime
 
-TOKEN = "MTQyNzEzMzE1NjM0NzA4ODkxNg.GfqeU9.lyFeXJYXDbT7sWt_3YKE4tJv9bn5cvDe6Gi9T4"
-GUILD_ID = 1427098932785446914
-ROLE_ID = 1427128545649496126
-LOG_CHANNEL_ID = 1427099016264683540
-ERROR_CHANNEL_ID = 1427139755757535272
+TOKEN = "Check DM for the token =)"
+GUILD_ID = 1427098932785446914 #needs to be replaced with 1145654983216332840 (SuperBullet AI discord server id)
+ROLE_ID = 1427128545649496126 #the @Pro Version role id
+LOG_CHANNEL_ID = 1427099016264683540 #need to make a new channel
+ERROR_CHANNEL_ID = 1427139755757535272 #need to make a new channel
 USER_LINKS_FILE = "user_links.json"
 LOG_FILE = "purchases.json"
 
-BACKEND_URL = "https://superbullet.ai/discord_webhooks/check_subscription_of_user"
+BACKEND_URL = "https://superbullet-backend-3948693.superbulletstudios.com/discord_webhooks/check_subscription_of_user"
 
 intents = discord.Intents.default()
 intents.members = True
@@ -150,3 +150,4 @@ async def on_ready():
     auto_check.start()
 
 bot.run(TOKEN)
+
